@@ -15,31 +15,37 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mabilinternational.com"),
-  title: "Mabil International - Sustainable Cassava & Agro-Industrial Solutions",
-  description: "Based in Tohoun, Togo, Mabil International is a leader in cassava transformation, producing premium gari, cassava paste, dried chips, and certified cuttings in partnership with 127 cooperatives.",
+  metadataBase: new URL("https://mabil-intl.vercel.app"),
+  title: "Mabil International - Transformation de Manioc & Solutions Agro-Industrielles",
+  description: "Mabil International à Tohoun (Togo) est leader de la transformation de manioc : gari premium, pâte de manioc, cossettes séchées et boutures certifiées en partenariat avec 127 coopératives.",
   keywords: [
-    "Mabil International", "Cassava transformation", "Togo", "Tohoun", "Gari production", 
-    "Cassava paste", "Dried cassava chips", "Sustainable agriculture", "Agricultural cooperatives", 
-    "Cassava cuttings", "Agro-industrial Togo", "Women empowerment agriculture"
+    "Mabil International", "Transformation du manioc", "Togo", "Tohoun", "Production de gari", 
+    "Pâte de manioc", "Cossettes de manioc", "Agriculture durable", "Coopératives agricoles", 
+    "Boutures de manioc", "Agro-industrie Togo", "Autonomisation des femmes"
   ],
   authors: [{ name: "Mabil International SARL" }],
   openGraph: {
-    title: "Mabil International - Transforming Cassava. Empowering Communities.",
-    description: "Leading agro-industrial company in Togo specializing in high-yield cassava cuttings, organic gari, paste, and sustainable agriculture cooperative support.",
-    url: "https://mabilinternational.com",
+    title: "Mabil International - Valoriser le Manioc, Autonomiser les Communautés",
+    description: "Acteur de référence de la filière manioc au Togo. Production de gari bio, pâte de manioc, cossettes et boutures certifiées en partenariat avec 127 coopératives.",
+    url: "https://mabil-intl.vercel.app",
     siteName: "Mabil International",
     images: [
       {
-        url: "/images/hero_bg.png",
-        width: 1200,
-        height: 630,
-        alt: "Mabil International Cassava Farm in Tohoun, Togo",
+        url: "/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "Logo Mabil International",
       },
     ],
     locale: "fr_TG",
     type: "website",
   },
+  twitter: {
+    card: "summary",
+    title: "Mabil International - Valoriser le Manioc, Autonomiser les Communautés",
+    description: "Acteur de référence de la filière manioc au Togo. Production de gari bio, pâte de manioc, cossettes et boutures certifiées.",
+    images: ["/images/logo.png"],
+  }
 };
 
 export default function RootLayout({
@@ -48,7 +54,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${inter.variable} h-full antialiased`}>
+    <html lang="fr" className={`${poppins.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-white text-stone-900">
         {children}
       </body>
