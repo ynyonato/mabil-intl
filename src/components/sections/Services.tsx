@@ -75,6 +75,8 @@ export default function Services({ currentLang }: ServicesProps) {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: idx * 0.1 }}
               className={`rounded-3xl p-8 border transition-all duration-300 relative flex flex-col justify-between ${
+                service.id === "rental" ? "lg:col-span-2" : "col-span-1"
+              } ${
                 service.upcoming
                   ? "bg-stone-100 border-dashed border-stone-300 shadow-none"
                   : "bg-white border-stone-200/60 shadow-sm hover:shadow-lg hover:border-brand-green-light/35"
@@ -108,6 +110,22 @@ export default function Services({ currentLang }: ServicesProps) {
                 <p className="font-inter text-stone-500 text-sm leading-relaxed mb-6">
                   {service.desc}
                 </p>
+
+                {/* CTA for Rental to contact form */}
+                {service.id === "rental" && (
+                  <div className="mt-4 mb-2">
+                    <a
+                      href="#contact"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                      }}
+                      className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-poppins font-bold text-xs bg-brand-brown hover:bg-brand-brown/90 hover:scale-[1.02] text-white hover:text-white transition-all duration-300 shadow-sm hover:shadow-md cursor-pointer uppercase tracking-wider"
+                    >
+                      {t.services.investBtn}
+                    </a>
+                  </div>
+                )}
               </div>
 
               {/* Decorative bottom bar for completed services */}

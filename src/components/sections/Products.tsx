@@ -24,11 +24,11 @@ export default function Products({ currentLang }: ProductsProps) {
     },
     {
       id: "paste",
-      image: "/images/cassava_paste.png",
+      image: "/images/cassava_puree.png",
       title: t.products.items.paste.title,
       desc: t.products.items.paste.desc,
       spec: t.products.items.paste.spec,
-      badge: "Traditional"
+      badge: currentLang === "fr" ? "Usage Industriel" : "Industrial Use"
     },
     {
       id: "chips-peeled",

@@ -123,8 +123,8 @@ export default function Contact({ currentLang }: ContactProps) {
                     <a href="tel:+22890286644" className="font-inter text-stone-500 text-sm hover:text-brand-green-dark transition-colors block">
                       +228 90 28 66 44
                     </a>
-                    <a href="tel:+22891808019" className="font-inter text-stone-500 text-sm hover:text-brand-green-dark transition-colors block">
-                      +228 91 80 80 19
+                    <a href="tel:+22870545453" className="font-inter text-stone-500 text-sm hover:text-brand-green-dark transition-colors block">
+                      +228 70 54 54 53
                     </a>
                   </div>
                 </div>

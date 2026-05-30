@@ -44,9 +44,9 @@ export default function Gallery({ currentLang }: GalleryProps) {
     },
     {
       id: 5,
-      src: "/images/cassava_paste.png",
-      alt: "Cassava Paste",
-      category: currentLang === "fr" ? "Pâte de Manioc" : "Cassava Paste",
+      src: "/images/cassava_puree.png",
+      alt: "Cassava Puree",
+      category: currentLang === "fr" ? "Purée de Manioc" : "Cassava Puree",
       span: "md:col-span-4 h-80"
     },
     {

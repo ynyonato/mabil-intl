@@ -57,9 +57,9 @@ export const translations = {
           spec: "Granulométrie fine, séchage optimal, sans additifs."
         },
         paste: {
-          title: "Pâte de Manioc (Foufou)",
-          desc: "Pâte de manioc fraîche, lisse et naturelle, prête pour la préparation des repas traditionnels.",
-          spec: "Fraîcheur garantie, texture parfaite, 100% manioc."
+          title: "Purée de Manioc",
+          desc: "Manioc frais, broyé, écrasé, pressé et tout frais conditionné en sac pour un usage industriel.",
+          spec: "Usage industriel, 100% frais et naturel, emballage renforcé."
         },
         chipsPeeled: {
           title: "Cossettes Épluchées",
@@ -92,6 +92,7 @@ export const translations = {
       badge: "Agro-Industrialisation",
       title: "Nos Services Intégrés",
       rentalBadge: "Bientôt disponible",
+      investBtn: "Investir dans ce projet",
       items: {
         training: {
           title: "Formation Agricole",
@@ -217,9 +218,9 @@ export const translations = {
           spec: "Fine grain size, optimal drying, zero additives."
         },
         paste: {
-          title: "Cassava Paste (Fufu)",
-          desc: "Fresh, smooth, and natural cassava paste ready for traditional dishes.",
-          spec: "Guaranteed fresh, perfect texture, 100% cassava root."
+          title: "Cassava Puree",
+          desc: "Fresh cassava, crushed, mashed, pressed, and freshly packaged in bags for industrial use.",
+          spec: "Industrial grade, 100% fresh & natural, reinforced packaging."
         },
         chipsPeeled: {
           title: "Peeled Cassava Chips",
@@ -252,6 +253,7 @@ export const translations = {
       badge: "Agro-Industrialization",
       title: "Our Integrated Services",
       rentalBadge: "Coming Soon",
+      investBtn: "Invest in this project",
       items: {
         training: {
           title: "Agricultural Training",
