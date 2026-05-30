@@ -96,20 +96,28 @@ export default function Contact({ currentLang }: ContactProps) {
             <div className="bg-white rounded-3xl p-8 border border-stone-200/50 shadow-sm flex flex-col justify-between h-full gap-6">
               
               <div className="flex flex-col gap-6">
-                {/* Address */}
-                <div className="flex gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-brand-green-dark/10 flex items-center justify-center text-brand-green-dark shrink-0">
+                 {/* Address */}
+                <a 
+                  href="https://www.google.com/maps/place/MABIL+International/@7.0240468,1.609949,17z/data=!3m1!4b1!4m6!3m5!1s0x10244dc218cece41:0xd5df6c93da6c2364!8m2!3d7.0240468!4d1.609949!16s%2Fg%2F11mvzwgt57!5m1!1e1?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-4 group cursor-pointer hover:bg-stone-50/70 p-3 -m-3 rounded-2xl transition-all duration-300"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-brand-green-dark/10 group-hover:bg-brand-green-dark/20 flex items-center justify-center text-brand-green-dark shrink-0 transition-colors">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="font-poppins font-bold text-stone-900 text-sm mb-1">
+                    <h4 className="font-poppins font-bold text-stone-900 text-sm mb-1 flex items-center gap-1.5 group-hover:text-brand-green-dark transition-colors">
                       {t.contact.info.addressTitle}
+                      <span className="text-[10px] font-bold text-brand-green-dark bg-emerald-50 border border-brand-green-light/20 px-2 py-0.5 rounded transition-all duration-300 group-hover:bg-brand-green-dark group-hover:text-white uppercase tracking-wider">
+                        {currentLang === "fr" ? "Carte" : "Map"}
+                      </span>
                     </h4>
                     <p className="font-inter text-stone-500 text-sm leading-relaxed">
                       {t.contact.info.address}
                     </p>
                   </div>
-                </div>
+                </a>
 
                 {/* Phones */}
                 <div className="flex gap-4">
@@ -342,8 +350,8 @@ export default function Contact({ currentLang }: ContactProps) {
           className="w-full mt-12 relative h-96 rounded-3xl overflow-hidden shadow-sm border border-stone-200 bg-white"
         >
           <iframe
-            title={t.contact.form.subject}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31671.18939221191!2d1.597371!3d7.019398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1026046e7f82b7db%3A0xe54d3d82054ff14d!2sTohoun!5e0!3m2!1sen!2stg!4v1716987654321!5m2!1sen!2stg"
+            title="Localisation de MABIL International"
+            src="https://maps.google.com/maps?q=MABIL%20International%2C%20Tohoun%2C%20Togo&t=&z=16&ie=UTF8&iwloc=&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
