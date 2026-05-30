@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: "Mabil International",
     images: [
       {
-        url: "/images/logo.png",
+        url: "/images/mabil_logo_official.png",
         width: 800,
         height: 800,
         alt: "Logo Mabil International",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Mabil International - Valoriser le Manioc, Autonomiser les Communautés",
     description: "Acteur de référence de la filière manioc au Togo. Production de gari bio, pâte de manioc, cossettes et boutures certifiées.",
-    images: ["/images/logo.png"],
+    images: ["/images/mabil_logo_official.png"],
   }
 };
 

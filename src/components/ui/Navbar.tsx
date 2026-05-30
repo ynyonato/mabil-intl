@@ -69,9 +69,9 @@ export default function Navbar({ currentLang, onLanguageChange }: NavbarProps) {
           className="flex items-center gap-3 cursor-pointer"
           onClick={() => scrollToSection("hero")}
         >
-          <div className="relative w-10 h-10 overflow-hidden">
+          <div className="relative w-12 h-12 overflow-hidden">
             <Image
-              src="/images/logo_icon.png"
+              src="/images/mabil_logo_official.png"
               alt="Mabil International Logo"
               fill
               className="object-contain"

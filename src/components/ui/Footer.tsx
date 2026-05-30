@@ -60,9 +60,9 @@ export default function Footer({ currentLang }: FooterProps) {
         {/* Brand Description */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-3 cursor-pointer" onClick={scrollToTop}>
-            <div className="relative w-10 h-10 overflow-hidden bg-white rounded-full p-1">
+            <div className="relative w-12 h-12 overflow-hidden bg-white rounded-full p-1">
               <Image
-                src="/images/logo_icon.png"
+                src="/images/mabil_logo_official.png"
                 alt="Mabil International Logo"
                 fill
                 className="object-contain p-1"
