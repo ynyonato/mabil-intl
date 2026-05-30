@@ -71,7 +71,7 @@ export default function Navbar({ currentLang, onLanguageChange }: NavbarProps) {
         >
           <div className="relative w-10 h-10 overflow-hidden">
             <Image
-              src="/images/logo.png"
+              src="/images/logo_icon.png"
               alt="Mabil International Logo"
               fill
               className="object-contain"
