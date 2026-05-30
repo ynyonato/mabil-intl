@@ -21,17 +21,15 @@ export default function Partners({ currentLang }: PartnersProps) {
         ? "Coopération Allemande au Togo (GIZ)" 
         : "German Development Cooperation (GIZ) Togo",
       logo: (
-        <svg viewBox="0 0 320 120" className="w-full h-20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Blue Background block */}
-          <rect x="10" y="10" width="100" height="100" rx="6" fill="#27427D" />
-          {/* "giz" letters in white serif */}
-          <text x="60" y="72" fontSize="48" fontFamily="Georgia, serif" fontWeight="bold" fill="#FFFFFF" textAnchor="middle">giz</text>
-          {/* Supporting text */}
-          <text x="125" y="38" fontSize="10.5" fontFamily="var(--font-poppins), sans-serif" fontWeight="700" fill="#27427D">coopération allemande</text>
-          <text x="125" y="52" fontSize="9.5" fontFamily="var(--font-inter), sans-serif" fontWeight="500" fill="#64748B">DEUTSCHE ZUSAMMENARBEIT</text>
-          {/* Small GIZ full title */}
-          <text x="125" y="76" fontSize="8" fontFamily="var(--font-inter), sans-serif" fill="#94A3B8" fontWeight="400">Implémenté par GIZ GmbH</text>
-        </svg>
+        <div className="relative w-full h-20 flex items-center justify-center">
+          <Image
+            src="/images/giz_logo.png"
+            alt="Coopération Allemande au Togo (GIZ)"
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        </div>
       )
     },
     {
