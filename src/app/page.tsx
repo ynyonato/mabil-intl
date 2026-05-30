@@ -8,6 +8,7 @@ import Products from "@/components/sections/Products";
 import Services from "@/components/sections/Services";
 import Impact from "@/components/sections/Impact";
 import Gallery from "@/components/sections/Gallery";
+import Partners from "@/components/sections/Partners";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/ui/Footer";
 import { Language } from "@/lib/translations";
@@ -42,6 +43,9 @@ export default function Home() {
         
         {/* Photo Gallery Grid */}
         <Gallery currentLang={lang} />
+        
+        {/* Institutional Partners */}
+        <Partners currentLang={lang} />
         
         {/* Interactive Contact & Embeds */}
         <Contact currentLang={lang} />

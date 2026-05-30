@@ -59,7 +59,7 @@ export default function Navbar({ currentLang, onLanguageChange }: NavbarProps) {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "glassmorphism shadow-md py-3"
+          ? "glassmorphism shadow-[0_8px_32px_rgba(0,0,0,0.03)] border-b border-brand-green-dark/10 py-3"
           : "bg-transparent py-5"
       }`}
     >

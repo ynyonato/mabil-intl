@@ -14,7 +14,39 @@ export default function About({ currentLang }: AboutProps) {
   const t = translations[currentLang];
 
   return (
-    <section id="about" className="pt-24 bg-stone-50 overflow-hidden pb-0">
+    <section id="about" className="pt-24 bg-stone-50 overflow-hidden pb-0 relative">
+      {/* Biophilic Cassava Leaf Watermark Background (Left) */}
+      <div className="absolute left-0 top-1/4 -translate-y-1/2 -translate-x-1/4 opacity-[0.03] pointer-events-none text-brand-green-dark select-none hidden lg:block">
+        <svg width="450" height="450" viewBox="0 0 100 100" fill="currentColor">
+          <path d="M50 50 L50 5 C50 5 47 25 50 50 Z" />
+          <path d="M50 50 L80 18 C80 18 63 32 50 50 Z" />
+          <path d="M50 50 L95 40 C95 40 75 45 50 50 Z" />
+          <path d="M50 50 L90 65 C90 65 72 58 50 50 Z" />
+          <path d="M50 50 L65 88 C65 88 56 68 50 50 Z" />
+          <path d="M50 50 L35 88 C35 88 44 68 50 50 Z" />
+          <path d="M50 50 L10 65 C10 65 28 58 50 50 Z" />
+          <path d="M50 50 L5 40 C5 40 25 45 50 50 Z" />
+          <path d="M50 50 L20 18 C20 18 37 32 50 50 Z" />
+          <circle cx="50" cy="50" r="3" fill="currentColor" />
+        </svg>
+      </div>
+
+      {/* Biophilic Cassava Leaf Watermark Background (Right, rotated) */}
+      <div className="absolute right-0 top-2/3 -translate-y-1/2 translate-x-1/4 opacity-[0.015] pointer-events-none text-brand-green-dark select-none hidden lg:block rotate-45">
+        <svg width="400" height="400" viewBox="0 0 100 100" fill="currentColor">
+          <path d="M50 50 L50 5 C50 5 47 25 50 50 Z" />
+          <path d="M50 50 L80 18 C80 18 63 32 50 50 Z" />
+          <path d="M50 50 L95 40 C95 40 75 45 50 50 Z" />
+          <path d="M50 50 L90 65 C90 65 72 58 50 50 Z" />
+          <path d="M50 50 L65 88 C65 88 56 68 50 50 Z" />
+          <path d="M50 50 L35 88 C35 88 44 68 50 50 Z" />
+          <path d="M50 50 L10 65 C10 65 28 58 50 50 Z" />
+          <path d="M50 50 L5 40 C5 40 25 45 50 50 Z" />
+          <path d="M50 50 L20 18 C20 18 37 32 50 50 Z" />
+          <circle cx="50" cy="50" r="3" fill="currentColor" />
+        </svg>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header (Centered, above image and description grid) */}

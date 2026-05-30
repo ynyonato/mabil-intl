@@ -120,6 +120,11 @@ export const translations = {
       title: "Découvrez notre quotidien",
       subtitle: "Un aperçu authentique de nos champs, du travail des femmes et de nos processus de transformation à Tohoun."
     },
+    partners: {
+      badge: "Confiance & Collaboration",
+      title: "Nos Partenaires",
+      subtitle: "Des institutions et acteurs de référence qui soutiennent notre chaîne de valeur au Togo."
+    },
     contact: {
       badge: "Contact",
       title: "Travaillons Ensemble",
@@ -274,6 +279,11 @@ export const translations = {
       badge: "In Images",
       title: "Discover Our Daily Operations",
       subtitle: "An authentic look at our fields, cooperative groups, and processing plant in Tohoun."
+    },
+    partners: {
+      badge: "Trust & Collaboration",
+      title: "Our Partners",
+      subtitle: "Key institutions and standard-setting actors supporting our value chain in Togo."
     },
     contact: {
       badge: "Contact",

@@ -17,7 +17,7 @@ export default function Button({
   ...props
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-poppins font-medium text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer shadow-sm";
+    "inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full font-poppins font-medium text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer shadow-sm group";
 
   const variants = {
     primary:
@@ -36,7 +36,11 @@ export default function Button({
       {...props}
     >
       {children}
-      {icon && <span className="w-4 h-4">{icon}</span>}
+      {icon && (
+        <span className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1 flex items-center justify-center">
+          {icon}
+        </span>
+      )}
     </motion.button>
   );
 }
