@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Handshake } from "lucide-react";
 import { Language, translations } from "@/lib/translations";
 import { motion } from "framer-motion";
@@ -19,9 +20,8 @@ export default function Partners({ currentLang }: PartnersProps) {
       fullName: currentLang === "fr" 
         ? "Coopération Allemande au Togo (GIZ)" 
         : "German Development Cooperation (GIZ) Togo",
-      // High-fidelity GIZ inline SVG logo representation
-      logoSvg: (
-        <svg viewBox="0 0 320 120" className="w-full h-16" fill="none" xmlns="http://www.w3.org/2000/svg">
+      logo: (
+        <svg viewBox="0 0 320 120" className="w-full h-20" fill="none" xmlns="http://www.w3.org/2000/svg">
           {/* Blue Background block */}
           <rect x="10" y="10" width="100" height="100" rx="6" fill="#27427D" />
           {/* "giz" letters in white serif */}
@@ -40,27 +40,16 @@ export default function Partners({ currentLang }: PartnersProps) {
       fullName: currentLang === "fr"
         ? "Ministère de l'Agriculture, de l'Élevage et du Développement Rural"
         : "Ministry of Agriculture, Livestock and Rural Development",
-      // High-fidelity Ministry emblem inline SVG logo
-      logoSvg: (
-        <svg viewBox="0 0 320 120" className="w-full h-16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Emblem Circle */}
-          <circle cx="60" cy="60" r="42" fill="#E2E8F0" />
-          <circle cx="60" cy="60" r="38" fill="#15803D" />
-          {/* Innermost design (wheat sheaf/sprout in yellow) */}
-          <path d="M54 75 C 54 50, 60 42, 60 42 C 60 42, 66 50, 66 75 Z" fill="#EAB308" />
-          <path d="M50 72 C 50 55, 57 48, 57 48 C 57 48, 60 52, 60 72 Z" fill="#CA8A04" />
-          <path d="M60 72 C 60 52, 63 48, 63 48 C 63 48, 70 55, 70 72 Z" fill="#CA8A04" />
-          {/* Star representing Togo flag */}
-          <circle cx="60" cy="35" r="7" fill="#EF4444" />
-          <polygon points="60,30 62,34 66,34 63,36 64,40 60,38 56,40 57,36 54,34 58,34" fill="#FFFFFF" />
-          {/* Text block */}
-          <text x="120" y="38" fontSize="11" fontFamily="var(--font-poppins), sans-serif" fontWeight="700" fill="#15803D">RÉPUBLIQUE TOGOLAISE</text>
-          <text x="120" y="55" fontSize="8" fontFamily="var(--font-inter), sans-serif" fontWeight="600" fill="#334155" letterSpacing="0.5">MINISTÈRE DE L'AGRICULTURE,</text>
-          <text x="120" y="68" fontSize="8" fontFamily="var(--font-inter), sans-serif" fontWeight="600" fill="#334155" letterSpacing="0.5">DE L'ÉLEVAGE ET DU DÉVELOPPEMENT RURAL</text>
-          {/* Togolese national stripes under text */}
-          <rect x="120" y="78" width="60" height="4" fill="#EAB308" />
-          <rect x="180" y="78" width="60" height="4" fill="#15803D" />
-        </svg>
+      logo: (
+        <div className="relative w-full h-20 flex items-center justify-center">
+          <Image
+            src="/images/agriculture_logo.png"
+            alt="Ministère de l'Agriculture, de l'Élevage et du Développement Rural du Togo"
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        </div>
       )
     },
     {
@@ -69,28 +58,16 @@ export default function Partners({ currentLang }: PartnersProps) {
       fullName: currentLang === "fr"
         ? "Chambre de Commerce et d'Industrie du Togo"
         : "Chamber of Commerce and Industry of Togo",
-      // High-fidelity CCI-Togo inline SVG logo representation
-      logoSvg: (
-        <svg viewBox="0 0 320 120" className="w-full h-16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          {/* Shield or Globe base */}
-          <circle cx="60" cy="60" r="42" fill="#F8FAFC" stroke="#1E3A8A" strokeWidth="2" />
-          {/* Cogwheel representing industry */}
-          <circle cx="60" cy="60" r="28" fill="none" stroke="#F59E0B" strokeWidth="4" strokeDasharray="8 4" />
-          <circle cx="60" cy="60" r="22" fill="#1E3A8A" />
-          {/* Map/Global lines representing commerce */}
-          <path d="M42 60 H 78" stroke="#FFFFFF" strokeWidth="1" />
-          <path d="M60 42 V 78" stroke="#FFFFFF" strokeWidth="1" />
-          <path d="M46 50 Q 60 56 74 50" stroke="#FFFFFF" strokeWidth="1" fill="none" />
-          <path d="M46 70 Q 60 64 74 70" stroke="#FFFFFF" strokeWidth="1" fill="none" />
-          {/* Monogram */}
-          <text x="60" y="64" fontSize="12" fontFamily="var(--font-poppins), sans-serif" fontWeight="900" fill="#FFFFFF" textAnchor="middle">CCI</text>
-          {/* Text block */}
-          <text x="120" y="44" fontSize="13" fontFamily="var(--font-poppins), sans-serif" fontWeight="800" fill="#1E3A8A">CCI-TOGO</text>
-          <text x="120" y="60" fontSize="8" fontFamily="var(--font-inter), sans-serif" fontWeight="600" fill="#64748B">CHAMBRE DE COMMERCE ET D'INDUSTRIE</text>
-          <text x="120" y="72" fontSize="8" fontFamily="var(--font-inter), sans-serif" fontWeight="600" fill="#64748B">DU TOGO</text>
-          {/* Decorative gold line */}
-          <line x1="120" y1="82" x2="260" y2="82" stroke="#F59E0B" strokeWidth="2" />
-        </svg>
+      logo: (
+        <div className="relative w-full h-20 flex items-center justify-center">
+          <Image
+            src="/images/cci_logo.png"
+            alt="Chambre de Commerce et d'Industrie du Togo"
+            fill
+            className="object-contain"
+            sizes="(max-width: 768px) 100vw, 33vw"
+          />
+        </div>
       )
     }
   ];
@@ -126,7 +103,7 @@ export default function Partners({ currentLang }: PartnersProps) {
             >
               {/* Logo block with smooth grayscale toggle */}
               <div className="w-full flex items-center justify-center filter grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-500 transform group-hover:scale-[1.02]">
-                {partner.logoSvg}
+                {partner.logo}
               </div>
 
               {/* Text Description */}
